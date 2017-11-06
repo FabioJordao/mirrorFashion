@@ -196,7 +196,7 @@ footer {
 }
 
 footer .container{
-    position: relative;
+    position: static;
     padding: 20px 0;
     align-items: center;
 }
