@@ -1,3 +1,4 @@
+
 .container {
     width: 97%;
 }
@@ -24,7 +25,7 @@ header h1 img{
     margin: 5px;
 }
 
-busca,
+.busca,
 .menu-departamentos,
 .destaque img{
     margin-right: 0;
@@ -68,4 +69,83 @@ footer .container{
     /*Tamanho da imagem */
     height: 30px;
     width: 30px;
+}
+
+/* Smartphones pequenos */
+@media (min-width: 180px){
+
+    .painel{
+        width: auto;
+    }
+    
+    .painel li{
+        width: 46%;
+    }
+    
+    .painel li img{
+        width:100%;    
+    }
+
+    footer .container {
+        text-align: center;
+    }
+    
+    .social{
+        margin-top: 20px;
+        text-align: center;
+        float: none;
+    }
+}
+
+
+/*Tablets e smartphones no modo paisagem*/
+@media (min-width: 480px){
+    header h1 {
+        margin: 5px 0;
+    }
+    .menu-departamentos {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-departamentos nav > ul{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/*Tela de 720px acima */
+@media (min-width: 720px) {
+    header h1 {
+        text-align: left;
+    }
+    
+    .menu-opcoes {
+        position: absolute;
+    }
+    
+    .sacola {
+        display: block;
+    }
+    
+    .painel li {
+        width: 15%;
+    }
+    
+    .busca, 
+    .menu-departamentos {
+        margin-right: 1%;
+        width: 30%;
+    }
+    
+    .menu-departamentos nav > ul {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    
+    .destaque img {
+        width: 69%;
+    }
 }
