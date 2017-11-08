@@ -1,0 +1,161 @@
+
+.container {
+    width: 97%;
+}
+
+header h1{
+    text-align: center;
+}
+
+header h1 img{
+    width:50%;
+}
+
+.sacola{
+    display: none;
+}
+
+.menu-opcoes{
+    position: static;
+    text-align: center;
+}
+
+.menu-opcoes ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.busca,
+.menu-departamentos,
+.destaque img{
+    margin-right: 0;
+    width: 100%;
+}
+
+.painel{
+    width: auto;
+}
+
+.painel li{
+    width: 31%;
+}
+
+.painel li img{
+    width:100%;
+}
+
+.atalho-inicio{
+    position: fixed;
+    right: 25px;
+    top: 230px;
+}
+
+.atalho-inicio img{
+    width: 60px;
+    height: 60px;
+}
+
+footer .container{
+    padding: 30px 4px;
+    display: inline-block;
+    position: static;
+}
+
+.social li{
+    margin-left: 15px;
+}
+
+.social a{
+    /*Tamanho da imagem */
+    height: 30px;
+    width: 30px;
+}
+
+/* Smartphones pequenos */
+@media (min-width: 180px){
+
+    .painel{
+        width: auto;
+    }
+    
+    .painel li{
+        width: 46%;
+    }
+    
+    .painel li img{
+        width:100%;    
+    }
+
+    footer .container {
+        text-align: center;
+    }
+    
+    .social{
+        margin-top: 20px;
+        text-align: center;
+        float: none;
+    }
+
+    .busca {
+        text-align: center;
+    }
+}
+
+
+/*Tablets e smartphones no modo paisagem*/
+@media (min-width: 480px){
+
+    .busca{
+        text-align: initial;
+    }
+    
+    header h1 {
+        margin: 5px 0;
+    }
+    
+    .menu-departamentos {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-departamentos nav > ul{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/*Tela de 720px acima */
+@media (min-width: 720px) {
+    header h1 {
+        text-align: left;
+    }
+    
+    .menu-opcoes {
+        position: absolute;
+    }
+    
+    .sacola {
+        display: block;
+    }
+    
+    .painel li {
+        width: 15%;
+    }
+    
+    .busca, 
+    .menu-departamentos {
+        margin-right: 1%;
+        width: 30%;
+    }
+    
+    .menu-departamentos nav > ul {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    
+    .destaque img {
+        width: 69%;
+    }
+}

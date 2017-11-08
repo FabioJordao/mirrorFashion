@@ -1,4 +1,4 @@
-
+/*Edicão do header*/
 .container {
     width: 97%;
 }
@@ -23,26 +23,7 @@ header h1 img{
 .menu-opcoes ul li{
     display: inline-block;
     margin: 5px;
-}
-
-.busca,
-.menu-departamentos,
-.destaque img{
-    margin-right: 0;
-    width: 100%;
-}
-
-.painel{
-    width: auto;
-}
-
-.painel li{
-    width: 31%;
-}
-
-.painel li img{
-    width:100%;
-}
+} /* Fim da edição do header */
 
 .atalho-inicio{
     position: fixed;
@@ -50,11 +31,24 @@ header h1 img{
     top: 230px;
 }
 
-.atalho-inicio img{
-    width: 60px;
-    height: 60px;
+#centro-distribuicao figure{
+    width: 90%;
 }
 
+#centro-distribuicao figure img{
+    width: 100%;
+}
+
+#historia figure{
+    width: 95%;
+    float: none;
+}
+
+#historia figure img{
+    width: 100%;
+}
+
+/*Edição do footer */
 footer .container{
     padding: 30px 4px;
     display: inline-block;
@@ -69,23 +63,18 @@ footer .container{
     /*Tamanho da imagem */
     height: 30px;
     width: 30px;
-}
+} /*Fim da edição do footer */
+
 
 /* Smartphones pequenos */
 @media (min-width: 180px){
-
-    .painel{
-        width: auto;
-    }
     
-    .painel li{
-        width: 46%;
-    }
+    /*Edição do header*/
+    .busca {
+        text-align: center;
+    } /*Fim edição do header*/ 
     
-    .painel li img{
-        width:100%;    
-    }
-
+    /* Edição do footer */
     footer .container {
         text-align: center;
     }
@@ -94,29 +83,28 @@ footer .container{
         margin-top: 20px;
         text-align: center;
         float: none;
-    }
+    }/*Fim da edição do footer */
+    
 }
-
 
 /*Tablets e smartphones no modo paisagem*/
 @media (min-width: 480px){
-    header h1 {
-        margin: 5px 0;
-    }
-    .menu-departamentos {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+    
+    /* Edição do header */
+    .busca{
+        text-align: initial;
     }
     
-    .menu-departamentos nav > ul{
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
+    header h1 {
+        margin: 5px 0;
+    } /*Fim da edição do header*/
+    
 }
 
 /*Tela de 720px acima */
 @media (min-width: 720px) {
+    
+    /* Edição do header */
     header h1 {
         text-align: left;
     }
@@ -129,23 +117,9 @@ footer .container{
         display: block;
     }
     
-    .painel li {
-        width: 15%;
-    }
-    
-    .busca, 
-    .menu-departamentos {
+    .busca{
         margin-right: 1%;
         width: 30%;
-    }
+    }/* Fim da edição do header */
     
-    .menu-departamentos nav > ul {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
-    
-    .destaque img {
-        width: 69%;
-    }
 }
