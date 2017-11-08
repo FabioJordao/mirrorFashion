@@ -35,30 +35,30 @@ header {
     right: 0;
 }
 
-.menu-opcoes {
+.menu-navegacao {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.menu-opcoes a:hover{
+.menu-navegacao a:hover{
     color: #007dc6;
 }
 
-.menu-opcoes a:active{
+.menu-navegacao a:active{
     color: #867dc6;
 }
 
-.menu-opcoes ul {
+.menu-navegacao ul {
     font-size: 15px;
 }
 
-.menu-opcoes ul li {
+.menu-navegacao ul li {
     display: inline;
     margin-left: 20px;
 }
 
-.menu-opcoes a {
+.menu-navegacao a {
     color: #003366;
 }
 

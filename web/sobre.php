@@ -69,7 +69,7 @@
             <h1>A Mirror Fashion</h1>
 
             <p>
-                A <strong>Mirror Fashion</strong> é a maior empresa de comércio eletrônico no segmento de moda em todo o mundo. Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de participação em 118 deles. Nosso centro
+                A <strong>Mirror Fashion</strong> é a maior empresa de comércio eletrônico no segmento de moda em todo o mundo. Fundada em 1932, há <?php print date("Y") - 1932;?> anos, possui filiais em 124 países, sendo líder de mercado com mais de 90% de participação em 118 deles. Nosso centro
                 de distribuição fica em <a href="https://maps.google.com.br/?q=Jacarezinho">Jacarezinho, no Paraná</a>. De lá, saem 48 aviões que distribuem nossos produtos às casas do mundo todo.
             </p>
 

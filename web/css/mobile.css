@@ -1,4 +1,4 @@
-/*Edicão do header*/
+
 .container {
     width: 97%;
 }
@@ -15,15 +15,34 @@ header h1 img{
     display: none;
 }
 
-.menu-opcoes{
+.menu-navegacao{
     position: static;
     text-align: center;
 }
 
-.menu-opcoes ul li{
+.menu-navegacao ul li{
     display: inline-block;
     margin: 5px;
-} /* Fim da edição do header */
+}
+
+.busca,
+.menu-departamentos,
+.destaque img{
+    margin-right: 0;
+    width: 100%;
+}
+
+.painel{
+    width: auto;
+}
+
+.painel li{
+    width: 31%;
+}
+
+.painel li img{
+    width:100%;
+}
 
 .atalho-inicio{
     position: fixed;
@@ -31,24 +50,11 @@ header h1 img{
     top: 230px;
 }
 
-#centro-distribuicao figure{
-    width: 90%;
+.atalho-inicio img{
+    width: 60px;
+    height: 60px;
 }
 
-#centro-distribuicao figure img{
-    width: 100%;
-}
-
-#historia figure{
-    width: 95%;
-    float: none;
-}
-
-#historia figure img{
-    width: 100%;
-}
-
-/*Edição do footer */
 footer .container{
     padding: 30px 4px;
     display: inline-block;
@@ -63,18 +69,23 @@ footer .container{
     /*Tamanho da imagem */
     height: 30px;
     width: 30px;
-} /*Fim da edição do footer */
-
+}
 
 /* Smartphones pequenos */
 @media (min-width: 180px){
+
+    .painel{
+        width: auto;
+    }
     
-    /*Edição do header*/
-    .busca {
-        text-align: center;
-    } /*Fim edição do header*/ 
+    .painel li{
+        width: 46%;
+    }
     
-    /* Edição do footer */
+    .painel li img{
+        width:100%;    
+    }
+
     footer .container {
         text-align: center;
     }
@@ -83,33 +94,44 @@ footer .container{
         margin-top: 20px;
         text-align: center;
         float: none;
-    }/*Fim da edição do footer */
-    
+    }
+
+    .busca {
+        text-align: center;
+    }
 }
+
 
 /*Tablets e smartphones no modo paisagem*/
 @media (min-width: 480px){
-    
-    /* Edição do header */
+
     .busca{
         text-align: initial;
     }
     
     header h1 {
         margin: 5px 0;
-    } /*Fim da edição do header*/
+    }
     
+    .menu-departamentos {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-departamentos nav > ul{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
 }
 
 /*Tela de 720px acima */
 @media (min-width: 720px) {
-    
-    /* Edição do header */
     header h1 {
         text-align: left;
     }
     
-    .menu-opcoes {
+    .menu-navegacao {
         position: absolute;
     }
     
@@ -117,9 +139,23 @@ footer .container{
         display: block;
     }
     
-    .busca{
+    .painel li {
+        width: 15%;
+    }
+    
+    .busca, 
+    .menu-departamentos {
         margin-right: 1%;
         width: 30%;
-    }/* Fim da edição do header */
+    }
     
+    .menu-departamentos nav > ul {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    
+    .destaque img {
+        width: 69%;
+    }
 }
