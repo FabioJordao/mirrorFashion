@@ -12,8 +12,8 @@
         <?php print @$head_css; ?>
 
         <!-- Responsividade -->
-        <meta name="viewport" content="width= device-width">
-        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px;)">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
 
     </head>
 
