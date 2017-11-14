@@ -1,4 +1,4 @@
-
+/*Cabeçalho - header*/
 .container {
     width: 97%;
 }
@@ -23,8 +23,21 @@ header h1 img{
 .menu-navegacao ul li{
     display: inline-block;
     margin: 5px;
+}/* Fim de header */
+
+/*Atalho para inicio da página */
+.atalho-inicio{
+    position: fixed;
+    right: 25px;
+    top: 230px;
 }
 
+.atalho-inicio img{
+    width: 60px;
+    height: 60px;
+} /*Fim do .atalho-inicio */
+
+/* index */
 .busca,
 .menu-departamentos,
 .destaque img{
@@ -42,24 +55,32 @@ header h1 img{
 
 .painel li img{
     width:100%;
+}/* fim index */
+
+/*Página Sobre */
+#centro-distribuicao figure{
+    width: 90%;
 }
 
-.atalho-inicio{
-    position: fixed;
-    right: 25px;
-    top: 230px;
+#centro-distribuicao figure img{
+    width: 100%;
 }
 
-.atalho-inicio img{
-    width: 60px;
-    height: 60px;
+#historia figure{
+    width: 95%;
+    float: none;
 }
 
+#historia figure img{
+    width: 100%;
+} /*Fim da página sobre */
+
+/* Footer - Rodape */
 footer .container{
     padding: 30px 4px;
     display: inline-block;
     position: static;
-}
+} 
 
 .social li{
     margin-left: 15px;
@@ -69,10 +90,14 @@ footer .container{
     /*Tamanho da imagem */
     height: 30px;
     width: 30px;
-}
+} /*Fim footer */
 
 /* Smartphones pequenos */
 @media (min-width: 180px){
+    /* Index */
+    .busca {
+        text-align: center;
+    }
 
     .painel{
         width: auto;
@@ -84,8 +109,9 @@ footer .container{
     
     .painel li img{
         width:100%;    
-    }
+    } /*Fim de index */
 
+    /* Rodapé - Footer */
     footer .container {
         text-align: center;
     }
@@ -94,23 +120,23 @@ footer .container{
         margin-top: 20px;
         text-align: center;
         float: none;
-    }
-
-    .busca {
-        text-align: center;
-    }
+    } /* Fim footer */
+    
 }
 
 
 /*Tablets e smartphones no modo paisagem*/
 @media (min-width: 480px){
 
-    .busca{
-        text-align: initial;
-    }
-    
+    /*Cabeçalho - Header */
     header h1 {
         margin: 5px 0;
+    } /*Fim header */
+    
+
+    /* index */
+    .busca{
+        text-align: initial;
     }
     
     .menu-departamentos {
@@ -122,11 +148,14 @@ footer .container{
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
-    }
+    } /* fim index*/
 }
+
 
 /*Tela de 720px acima */
 @media (min-width: 720px) {
+
+    /* cabeçalho - header */
     header h1 {
         text-align: left;
     }
@@ -137,8 +166,9 @@ footer .container{
     
     .sacola {
         display: block;
-    }
+    } /* fim header */
     
+    /* index */
     .painel li {
         width: 15%;
     }
@@ -157,5 +187,5 @@ footer .container{
     
     .destaque img {
         width: 69%;
-    }
+    } /* fim index */
 }

@@ -1,8 +1,10 @@
+<!-- import head and header -->
 <?php
     $head_title = "MirrorFashion | Início";
     include("header.php"); 
 ?>
 
+<!-- Content -->
 <!-- Inicio bloco de destaque -->
 <div class="container destaque">
 
@@ -197,4 +199,5 @@
 
 </div>
 
+<!-- Import footer -->
 <?php include("footer.php"); ?>

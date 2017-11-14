@@ -3,10 +3,7 @@ body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-header {
-    position: relative;
-}
-
+/* Atalho inicio */
 .atalho-inicio{
     position: fixed;
     right: 50px;
@@ -16,6 +13,12 @@ header {
 .atalho-inicio img{
     height: 80px;
     width: 80px;
+} /*Fim .atalho-inicio */
+
+
+/*Cabeçalho - header */
+header {
+    position: relative;
 }
 
 .container {
@@ -60,8 +63,9 @@ header {
 
 .menu-navegacao a {
     color: #003366;
-}
+} /*Fim header */
 
+/* Index */
 .busca,
 .menu-departamentos {
     background-color: #dcdcdc;
@@ -189,8 +193,69 @@ header {
     font-size: 14px;
     text-align: center;
     text-decoration: none;
+} /* Fim do index */
+
+/* Página Sobre */
+sobre {
+    margin-bottom: 10px;
 }
 
+.sobre h1 {
+    background-image: url(../img/sobre-background.jpg);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sobre h2 {
+    border-bottom: 2px solid #333333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    padding: 0 20px;
+    text-indent: 15px;
+}
+
+.sobre p:first-letter {
+    font-weight: bold;
+}
+
+.sobre h1 + p {
+    text-indent: 0;
+}
+
+.sobre ul{
+    padding: 0 30px;
+    list-style-type: circle;
+}
+
+#centro-distribuicao figure {
+    background-color: #F2EDED;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+#centro-distribuicao figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#centro-distribuicao figure {
+    margin-right: auto;
+    margin-left: auto;
+    width: 550px;
+}
+
+#historia figure {
+    float: right;
+    margin: 0 0 10px 10px;
+} /*FIm sobre */
+
+/* Rodapé-Footer */
 footer {
     background-image: url(../img/fundo-rodape.png);
     clear: both;
@@ -231,4 +296,4 @@ footer .container{
 
 .social a[href*="google.com"]{
     background-image: url(../img/googleplus.png);
-}
+} /*Fim do footer */
