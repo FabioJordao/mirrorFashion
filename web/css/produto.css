@@ -1,6 +1,7 @@
 @media (min--moz-device-pixel-ratio:0){
     fieldset {
         display: table-column;
+
     }
 }
 
@@ -46,7 +47,7 @@
 }
 
 .comprar:hover {
-    trasition: 1s;
+    transition: 1s;
     background-color: rgba(144, 224, 6, 0.63);
 }
 
@@ -113,6 +114,69 @@
     display: none;
 } /* fim do .cores*/
 
+/*detalhes */
+.detalhes-produto {
+    padding: 2em 0;
+}
+
+.detalhes-produto h2{
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.detalhes-produto p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 36em;
+}/* fim .detalhes */
+
+/*Tabela*/
+table {
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+
+thead {
+    background-color: #999;
+}
+
+thead th{
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+td {
+    padding: 0.3em;
+}
+
+tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+td:first-child {
+    font-style: italic;
+}
+/* fim table */
+
+/*Cor de fundo da página/ .produto-back*/
+.produto-back {
+    background-color: #F2F2F2;
+    margin-top: 1em;
+    border-top: 2px solid #ccc;
+}
+.cores label img {
+    border: 2px solid #ccc;
+}/* fim .produto-back
+
+/*reposividade para telas maiores que 500px*/
+@media (min-width:500px){
+    .detalhes-produto {
+        font-size: 1.2em;
+    }
+}
+
 /*reponsividade para telas maiores que 630px */
 @media (min-width: 620px){
     .produto{
@@ -125,12 +189,21 @@
         font-size: 1.2em;
     }
 
+    fieldset {
+        display: inline-block;
+        vertical-align: top;
+
+        margin: 1em 0;
+        min-width: 200px;
+        width: 45%;
+    }
+
     .cores {
         /* Evitar que a imagem se posicione em relação a este elemento*/
         position: static;
 
         /*Reiniciando o padding-top que não preciso mais */
-        padding-top: 0;
+        padding: 0;
     }
 
     .cores legend{
