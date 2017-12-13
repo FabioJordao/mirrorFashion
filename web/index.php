@@ -64,7 +64,7 @@
         <ol>
             <!--Primeiro produto -->
             <li>
-                <a href="produto.html">
+                <a href="produto.php">
                     <figure>
                         <img src="img/produtos/miniatura1.png" alt="Fuzz Gardin">
                         <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>

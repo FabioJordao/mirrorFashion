@@ -10,21 +10,21 @@
             <h1> Fuzzy Cardigan </h1>
             <p> Por apenas 129,90 </p>
 
-            <form>
+            <form action="checkout.php" method="POST">
                 <fieldset class="cores">
                     <legend> Escolha a cor:</legend>
                     
-                    <input type="radio" name="cor" id="verde" checked > 
+                    <input type="radio" name="cor" id="verde" value="Verde" checked > 
                     <label for="verde">
                         <img src="img/produtos/foto1-verde.png" alt="Produto 1 na cor verde">
                     </label>
 
-                    <input type="radio" name="cor" id="rosa"> 
+                    <input type="radio" name="cor" id="rosa" value="Rosa"> 
                     <label for="rosa"> 
                         <img src="img/produtos/foto1-rosa.png" alt="Produto 1 na cor rosa">
                     </label>
 
-                    <input type="radio" name="cor" id="azul"> 
+                    <input type="radio" name="cor" id="azul" value="Azul"> 
                     <label for="azul">
                         <img src="img/produtos/foto1-azul.png" alt="Produto 1 na cor azul">
                     </label>
@@ -36,7 +36,8 @@
                     <input type="range" min="36" max="46" value="42" step="2"
                     name="tamanho" id="tamanho">
                 </fieldset>
-
+                <input type="hidden" name="produto" value="Fuzzy Cardigan">
+                <input type="hidden" name="valor" value="129,90">
                 <input type="submit" class="comprar" value="Comprar">
             </form>
         </div>
