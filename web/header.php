@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="css/reset.css">
         <?php print @$head_css; ?>
 
+        <!--Arquivos Js -->
+        <?php print @$head_js; ?>
+
         <!-- Responsividade -->
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">

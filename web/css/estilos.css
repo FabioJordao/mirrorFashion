@@ -297,3 +297,8 @@ footer .container{
 .social a[href*="google.com"]{
     background-image: url(../img/googleplus.png);
 } /*Fim do footer */
+
+
+.form-control:invalid{
+    border: 1px solid #cc0000;
+}
