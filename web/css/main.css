@@ -18,7 +18,16 @@ body {
 
 /*Cabeçalho - header */
 header {
-    position: relative;
+    background-color: #f0f0f0; 
+}
+
+header .nav-link {
+    color: #003366 !important;
+}
+
+header button{
+    background-color: gray !important;
+    border-radius: 10px !important;
 }
 
 .container {
@@ -39,9 +48,8 @@ header {
 }
 
 .menu-navegacao {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: static;
+    float: right;
 }
 
 .menu-navegacao a:hover{
@@ -137,7 +145,11 @@ header {
 }
 
 .destaque {
-    margin-top: 10px;
+    margin-top: 125px;
+}
+
+.destaque h2{
+    font-size: 1.25rem;
 }
 
 .novidades {
@@ -154,11 +166,16 @@ header {
 }
 
 .painel{
-    margin: 10px 0;
+    margin: 10px;
     padding: 10px;
     width: 445px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #999;
+}
+
+.row{
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .painel li {
@@ -301,4 +318,10 @@ footer .container{
 
 .form-control:invalid{
     border: 1px solid #cc0000;
+}
+
+/* Checkout.php */
+
+.jumbotron{
+    margin-top: 125px;
 }

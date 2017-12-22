@@ -54,9 +54,9 @@
 <!-- Fim .container .destaque -->
 
 <!-- Inicio paineis -->
-<div class="container paineis">
+<div class="container row">
 
-    <section class="painel novidades">
+    <section class="painel novidades col-md-5">
         
         <h2>Novidades</h2>
 
@@ -127,7 +127,7 @@
     </section><!-- Fim de .novidades-->
 
     <!--Inicio mais vendidos -->
-    <section class="painel mais-vendidos">
+    <section class="painel mais-vendidos col-md-5">
         
         <h2>Mais Vendidos</h2>
         

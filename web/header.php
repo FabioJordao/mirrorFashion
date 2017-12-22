@@ -7,8 +7,10 @@
         <meta charset="utf-8">
 
         <!-- Arquivos css -->
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 990px)">
+        <link rel="stylesheet" href="css/framework.css" type="text/css">
         <?php print @$head_css; ?>
 
         <!--Arquivos Js -->
@@ -21,38 +23,52 @@
     </head>
 
     <body>
-        <!-- Inicio <header> -->
-        <header id="inicio-pagina" class="container">
+        <!-- Inicio do menu de navegação - Header -->
+        <header id="menu-navegacao" class="fixed-top">
+            
+            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                
+                <div class="container">
+                    
+                    <h1>
+                        <a class="navbar-brand text-white" href="index.php"> <img src="img/logo.png" alt="Logo da Empresa"></a>
+                    </h1>
 
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    
+                    <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+                    
+                        <!-- Lista de links -->
+                        <ul class="navbar-nav nav">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php#inicio" target=""> Início</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sua Conta</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lista de Desejos</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cartão Fidelidade</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.php">Sobre</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ajuda</a>
+                            </li>
+                        </ul> <!-- Fim da lista de links -->
 
-        <!-- Logo da empresa -->
-        <h1>
-            <a href="index.php"><img src="img/logo.png" alt="Logo Marca da Empresa"></a>
-        </h1> <!-- Fim logo da empresa -->
-
-        <!--Inicio Sacola -->
-        <p class="sacola">
-            Nenhum item na sacola de compras
-        </p> <!-- Fim .sacola -->
-
-        <!-- Menu de navegação -->
-        <nav class="menu-navegacao">
-            <ul>
-                <li><a href="index.php">Início</a></li>
-                <li><a href="#">Sua Conta</a></li>
-                <li><a href="#">Lista de Desejos</a></li>
-                <li><a href="#">Cartão Fidelidade</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
-                <li><a href="#">Ajuda</a></li>
-            </ul>
-        </nav> <!-- Fim .menu-navegacao -->
-
-        <!-- Atalho para inicio da página -->
-        <p class="atalho-inicio">
-            <a href="#inicio-pagina"><img src="img/inicio.png" title="Retorne ao Inicio da Página"></a>
-        </p> <!--Fim .atalho-inicio -->
-
-        </header> <!-- Fim <header> -->
+                    </div>
+                </div>
+            </nav>
+        </header> <!-- Fim do header -->
